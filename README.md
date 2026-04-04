@@ -14,7 +14,7 @@
    - [Acknowledgment](#acknowledgment)
    - [References](#references)
 
-2. [⚡ Analog Computing Implementation](#-part-2-analog-computing-implementation)
+2. [Analog Computing Implementation](#-part-2-analog-computing-implementation)
    - [Overview](#overview-1)
    - [Governing Differential Equation](#governing-differential-equation)
    - [Physical Interpretation](#physical-interpretation)
