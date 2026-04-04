@@ -1,3 +1,5 @@
+![Logo](logo.jpeg)
+
 # Mathematics for Computing III Project
 
 ## Table of Contents
