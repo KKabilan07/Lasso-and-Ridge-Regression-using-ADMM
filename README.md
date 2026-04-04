@@ -1,4 +1,32 @@
-# 🏠 House Price Prediction using Lasso, Ridge, and Elastic Net (ADMM - MATLAB)
+# Mathematics for Computing III Project
+
+## Table of Contents
+
+1. [House Price Prediction (ADMM - MATLAB)](#-part-1-house-price-prediction-admm---matlab)
+   - [Overview](#overview)
+   - [Objectives](#objectives)
+   - [Dataset](#dataset)
+   - [Methodology](#methodology)
+   - [Models Used](#models-used)
+   - [Results](#results)
+   - [Key Learnings](#key-learnings)
+   - [Future Work](#future-work)
+   - [Acknowledgment](#acknowledgment)
+   - [References](#references)
+
+2. [⚡ Analog Computing Implementation](#-part-2-analog-computing-implementation)
+   - [Overview](#overview-1)
+   - [Governing Differential Equation](#governing-differential-equation)
+   - [Physical Interpretation](#physical-interpretation)
+   - [Analog Circuit Concept](#analog-circuit-concept)
+   - [Example: SHM](#example-simple-harmonic-motion-shm)
+   - [Key Observations](#key-observations)
+   - [Tools Used](#tools-used)
+   - [Key Learnings](#key-learning-from-analog-part)
+
+---
+
+# Part 1: House Price Prediction (ADMM - MATLAB)
 
 ## Project Title
 
@@ -12,7 +40,7 @@ Amrita Vishwa Vidyapeetham, Coimbatore
 
 ---
 
-#  Team 7
+## Team 7
 
 | Name | Roll Number |
 |-----|-------------|
@@ -47,115 +75,187 @@ All models are implemented using the **ADMM (Alternating Direction Method of Mul
 ## Dataset
 
 * **File:** `melb_data.csv`
-* Contains features such as:
 
-  * Number of rooms
-  * Distance from city
-  * Property size
-  * Location
-  * Price (target variable)
+Features include:
+- Number of rooms  
+- Distance from city  
+- Property size  
+- Location  
+- Price (target variable)  
 
 ---
 
 ## Methodology
 
-###  Data Preprocessing
+### Data Preprocessing
 
-* Handle missing values
-* Normalize features
-* Split dataset into training and testing sets
+* Handle missing values  
+* Normalize features  
+* Train-test split  
 
 ---
 
-###  Models Used
+### Models Used
 
 #### Lasso Regression
-
-* Adds L1 penalty
-* Performs **feature selection** (sparse coefficients)
-
----
+- L1 penalty  
+- Performs feature selection  
 
 #### Ridge Regression
-
-* Adds L2 penalty
-* Reduces overfitting but keeps all features
-
----
+- L2 penalty  
+- Handles multicollinearity  
 
 #### Elastic Net Regression
-
-* Combination of L1 and L2
-* Balances sparsity and stability
+- Combination of L1 + L2  
+- Balanced approach  
 
 ---
 
-###  Optimization Technique
+### Optimization Technique
 
 #### ADMM (Alternating Direction Method of Multipliers)
 
-* Breaks complex optimization into smaller subproblems
-* Efficient for large-scale problems
-* Used for solving all three regression models
+- Splits optimization into subproblems  
+- Efficient for large-scale data  
+- Used for all models  
 
 ---
 
 ## Implementation Files
 
-| File Name                         | Description                        |
-| --------------------------------- | ---------------------------------- |
-| `Lasso.py`                        | Lasso implementation               |
-| `Ridge.py`                        | Ridge implementation               |
-| `Elastic_Net.py`                  | Elastic Net implementation         |
-| `Lasso_Regression_using_ADMM.mlx` | MATLAB Live Script for Lasso       |
-| `Ridge_Regression_using_ADMM.mlx` | MATLAB Live Script for Ridge       |
-| `Elastic_net_using_ADMM.mlx`      | MATLAB Live Script for Elastic Net |
-| `melb_data.csv`                   | Dataset                            |
+| File Name | Description |
+|----------|------------|
+| `Lasso.py` | Lasso implementation |
+| `Ridge.py` | Ridge implementation |
+| `Elastic_Net.py` | Elastic Net implementation |
+| `*.mlx` | MATLAB scripts |
+| `melb_data.csv` | Dataset |
 
 ---
 
 ## Results
 
-* Lasso performs well when feature selection is needed
-* Ridge performs better with highly correlated features
-* Elastic Net provides a balance between both
+- Lasso → Feature selection  
+- Ridge → Best for correlated data  
+- Elastic Net → Balanced performance  
 
 ---
 
 ## Key Learnings
 
-* Understanding of regularization techniques
-* Implementation of ADMM from scratch
-* Trade-offs between bias and variance
-* Practical exposure to real-world dataset
+- Regularization techniques  
+- ADMM optimization  
+- Bias-variance tradeoff  
+- Real-world ML workflow  
 
 ---
 
 ## Future Work
 
-* Cross-validation
-* Extend to nonlinear models
-* Deploy as a web application
+- Cross-validation  
+- Non-linear models  
+- Web deployment  
 
 ---
 
 ## Acknowledgment
 
-We thank our faculty (Sunil Sir) and institution for supporting this project.
+We thank our faculty (Sunil Sir) and institution for support.
 
 ---
 
 ## References
 
-1. A. M. Abhishek Sai, P. Raghavendra, K. Likhit Sai Eswar, G. Yashwanth Kiran,  
-   K. Sri Sai Harshith, and Mithun V.,  
+1. A. M. Abhishek Sai et al.,  
    **“Study of Lasso and Ridge Regression using ADMM,”**  
-   *2022 2nd International Conference on Intelligent Technologies (CONIT)*,  
-   Karnataka, India, June 24–26, 2022. IEEE.  
+   *CONIT 2022*, IEEE.  
    DOI: 10.1109/CONIT55038.2022.9847706  
 
-   This paper discusses the use of ADMM for optimizing Lasso and Ridge regression,  
-   compares it with gradient descent and Scikit-Learn implementations, and shows  
-   that ADMM converges faster and is computationally efficient.
+---
+
+# Part 2: Analog Computing Implementation
+
+## Overview
+
+This project also explores **analog computation of differential equations** using electronic circuits.
+
+Unlike digital methods, analog computing:
+- Works in **continuous time**
+- Provides **real-time solutions**
+- Uses physical components (Op-Amps, resistors, capacitors)
+
+---
+
+## Governing Differential Equation
+
+\[
+\frac{d^2 v}{dt^2} + \frac{dv}{dt} + v = u_0
+\]
+
+### Where:
+
+- Second derivative → Acceleration  
+- First derivative → Damping  
+- \( u_0 \) → Input  
+
+---
+
+## Physical Interpretation
+
+Represents a dynamic system:
+
+- Inertia → second derivative  
+- Energy loss → first derivative  
+- Output → system response  
+
+---
+
+## Analog Circuit Concept
+
+| Operation | Circuit |
+|----------|--------|
+| Integration | Op-Amp + Capacitor |
+| Scaling | Resistors |
+| Inversion | Inverting amplifier |
+
+---
+
+## Example: Simple Harmonic Motion (SHM)
+
+\[
+\frac{d^2 x}{dt^2} + \omega_0^2 x = 0
+\]
+
+Implemented using:
+
+1. Integrator (velocity)  
+2. Integrator (position)  
+3. Feedback loop  
+
+---
+
+## Key Observations
+
+- Continuous real-time computation  
+- Sinusoidal outputs  
+- Phase shift validates SHM  
+- No discretization error  
+
+---
+
+## Tools Used
+
+- ADALM2000 (M2K)  
+- Oscilloscope (Scopy)  
+- 741 Op-Amps  
+
+---
+
+## Key Learning from Analog Part
+
+- Math → Hardware mapping  
+- Real-time computation  
+- Circuit-based problem solving  
+- Complementary to ML/ADMM  
 
 ---
