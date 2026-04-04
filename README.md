@@ -21,7 +21,6 @@ Amrita Vishwa Vidyapeetham, Coimbatore
 | Kishore B | CB.SC.U4AIE24227 |
 | Rahul L S | CB.SC.U4AIE24248 |
 
-
 ---
 
 ## Overview
@@ -70,21 +69,21 @@ All models are implemented using the **ADMM (Alternating Direction Method of Mul
 
 ###  Models Used
 
-#### 🔹 Lasso Regression
+#### Lasso Regression
 
 * Adds L1 penalty
 * Performs **feature selection** (sparse coefficients)
 
 ---
 
-#### 🔹 Ridge Regression
+#### Ridge Regression
 
 * Adds L2 penalty
 * Reduces overfitting but keeps all features
 
 ---
 
-#### 🔹 Elastic Net Regression
+#### Elastic Net Regression
 
 * Combination of L1 and L2
 * Balances sparsity and stability
@@ -93,7 +92,7 @@ All models are implemented using the **ADMM (Alternating Direction Method of Mul
 
 ###  Optimization Technique
 
-#### 🔹 ADMM (Alternating Direction Method of Multipliers)
+#### ADMM (Alternating Direction Method of Multipliers)
 
 * Breaks complex optimization into smaller subproblems
 * Efficient for large-scale problems
@@ -142,6 +141,21 @@ All models are implemented using the **ADMM (Alternating Direction Method of Mul
 
 ## Acknowledgment
 
-We thank our faculty(Sunil Sir) and institution for supporting this project.
+We thank our faculty (Sunil Sir) and institution for supporting this project.
+
+---
+
+## References
+
+1. A. M. Abhishek Sai, P. Raghavendra, K. Likhit Sai Eswar, G. Yashwanth Kiran,  
+   K. Sri Sai Harshith, and Mithun V.,  
+   **“Study of Lasso and Ridge Regression using ADMM,”**  
+   *2022 2nd International Conference on Intelligent Technologies (CONIT)*,  
+   Karnataka, India, June 24–26, 2022. IEEE.  
+   DOI: 10.1109/CONIT55038.2022.9847706  
+
+   This paper discusses the use of ADMM for optimizing Lasso and Ridge regression,  
+   compares it with gradient descent and Scikit-Learn implementations, and shows  
+   that ADMM converges faster and is computationally efficient.
 
 ---
