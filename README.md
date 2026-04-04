@@ -1,4 +1,4 @@
-<img src="logo.jpeg" alt="Logo" width="100%" style="max-width: 600px; height: auto;">
+<img src="Amrita.png" alt="Logo" width="100%" style="max-width: 600px; height: auto;">
 
 # Mathematics for Computing III Project
 
