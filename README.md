@@ -6,12 +6,21 @@
 
 ---
 
-## Team Members
+## Course
+**22MAT220 – Mathematics for Computing III**  
+Amrita Vishwa Vidyapeetham, Coimbatore
 
-* **G Prajwal Priyadarshan** (CB.SC.U4AIE24214)
-* **Kabilan K** (CB.SC.U4AEI24224)
-* **Kishore B** (CB.SC.U4AIE2427)
-* **Rahul L S** (CB.SC.U4AIE24248)
+---
+
+#  Team 7
+
+| Name | Roll Number |
+|-----|-------------|
+| G Prajwal Priyadarshan | CB.SC.U4AIE24214 |
+| Kabilan K | CB.SC.U4AIE24224 |
+| Kishore B | CB.SC.U4AIE24227 |
+| Rahul L S | CB.SC.U4AIE24248 |
+
 
 ---
 
@@ -125,7 +134,6 @@ All models are implemented using the **ADMM (Alternating Direction Method of Mul
 
 ## Future Work
 
-* Hyperparameter tuning (λ values)
 * Cross-validation
 * Extend to nonlinear models
 * Deploy as a web application
